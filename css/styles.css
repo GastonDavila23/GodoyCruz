@@ -1,0 +1,254 @@
+/* generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(
+    to right,
+    #234ea2 14.28%,
+    #ffffff 14.28%,
+    #ffffff 28.56%,
+    #234ea2 28.56%,
+    #234ea2 42.84%,
+    #ffffff 42.84%,
+    #ffffff 57.12%,
+    #234ea2 57.12%,
+    #234ea2 71.4%,
+    #ffffff 71.4%,
+    #ffffff 85.68%,
+    #234ea2 85.68%,
+    #234ea2 100%
+  );
+}
+
+ul,
+ol {
+  padding-left: 0;
+}
+
+ul,
+ol,
+div {
+  list-style: none;
+}
+ul a,
+ol a,
+div a {
+  text-decoration: none;
+}
+
+/* header */
+.menu .menu-titulo {
+  height: 160px;
+  background-color: #333;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+.menu .menu-titulo h1 {
+  height: 80px;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 2em;
+  font-family: "Kaushan Script", sans-serif;
+}
+.menu .menu-titulo img {
+  width: 100px;
+  height: 100px;
+}
+
+/* footer */
+footer {
+  color: white;
+  background-color: #333333;
+}
+footer .redes p {
+  font-size: 1em;
+}
+footer .redes i {
+  color: white;
+  font-size: 1.5em;
+}
+footer .redes i:hover {
+  color: #234ea2;
+  transform: scale(1.3);
+}
+footer .ubicacion p {
+  margin-right: 10px;
+  font-size: 1em;
+}
+footer .ubicacion i {
+  font-size: 1.5em;
+}
+footer .pago i {
+  font-size: 1.5em;
+}
+footer .autor {
+  font-size: 0.7em;
+}
+
+/* index */
+.nosotros {
+  background-color: white;
+  color: black;
+  padding: 1em;
+  font-size: 0.8em;
+  text-align: center;
+}
+.nosotros h2 {
+  padding: 0.2em 0.5em;
+  font-weight: 300;
+}
+.nosotros p {
+  font-weight: 100;
+  padding: 0.5em;
+}
+
+.titulo {
+  background-color: #c2c2c2;
+  color: #000000;
+  font-size: 1.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 0.6em;
+  text-align: center;
+  margin: 15px 0;
+}
+
+/* formulario */
+.formulario {
+  background-color: #c2c2c2;
+  font-weight: 800;
+  font-size: 1.1em;
+}
+.formulario input {
+  border: 0;
+  border-radius: 2em;
+}
+.formulario button {
+  background-color: #234ea2;
+  width: 10em;
+  padding: 0.3em 0.3em;
+  font-size: 0.7em;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 2em;
+  width: 150px;
+  height: 40px;
+  border-radius: 3em;
+}
+.formulario button:hover {
+  color: black;
+  background-color: #2b6cee;
+  transform: scale(1.05);
+  transition: 150ms linear;
+}
+
+/* noticias */
+#contenedor-noticias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contenedor-noticias .card-noticias {
+  margin: 20px auto;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#contenedor-noticias .card-noticias div {
+  display: flex;
+  flex-direction: column;
+  background-color: #c2c2c2;
+  margin: 20px;
+  padding: 10px;
+  padding: 10px;
+}
+
+#contenedor-noticias .card-noticias div .noticia-img {
+  width: 860px;
+}
+
+#contenedor-noticias .card-noticias div .noticia-descripcion {
+  margin: 10px auto;
+  color: #333333;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+/* MEDIA QUERIES */
+/* media 768px */
+@media (max-width: 768px) {
+  #contenedor-noticias .card-noticias {
+    width: 100%;
+  }
+  #contenedor-noticias .card-noticias div .noticia-img {
+    width: 400px;
+  }
+  .nosotros {
+    font-size: 1.3em;
+  }
+}
+
+/* media 279px a 992px */
+@media (min-width: 769px) and (max-width: 992px) {
+  #contenedor-noticias .card-noticias div .noticia-img {
+    width: 600px;
+  }
+}
+
+/* media 993px */
+@media (min-width: 992px) {
+  .menu .menu-titulo img {
+    width: 150px;
+    height: 150px;
+  }
+  .menu .menu-titulo h1 {
+    font-size: 2.5em;
+  }
+  #contenedor-noticias .card-noticias {
+    width: 90%;
+  }
+  #contenedor-noticias .card-noticias div .noticia-img {
+    width: 700px;
+  }
+  footer .redes p {
+    font-size: 1.5em;
+  }
+  footer .redes i {
+    font-size: 2em;
+  }
+  footer .registro div p {
+    font-size: 1.5em;
+  }
+  footer .ubicacion p {
+    font-size: 1.5em;
+  }
+  footer .ubicacion i {
+    font-size: 2em;
+  }
+  footer .pago i {
+    font-size: 2em;
+  }
+  footer .autor {
+    font-size: 1.1em;
+  }
+}
+
+/* media 1200px */
+@media (min-width: 1200px) {
+  .nosotros {
+    font-size: 1.5em;
+  }
+}
